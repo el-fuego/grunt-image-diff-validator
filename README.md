@@ -55,8 +55,6 @@ Default value: `'1%'`
 
 What difference need to be ignored
 
-```
-
 
 ___
 #### Recommendations
