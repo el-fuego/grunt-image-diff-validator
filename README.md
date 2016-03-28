@@ -58,7 +58,7 @@ What difference need to be ignored
 
 ___
 #### Recommendations
-Use some like <a href="https://github.com/kanema/grunt-image-diff">grunt-image-diff</a> to generate screenshots at your e2e tests<br />
+Use some like <a href="https://github.com/swissmanu/protractor-screenshot-reporter">protractor-screenshot-reporter</a> to generate screenshots at your e2e tests<br />
 <br />
 Use PNG instead of JPG for yours screenshots<br />
 JPG diff result example you can find at <a href="https://github.com/el-fuego/grunt-image-diff-validator/test/files/diff/different.jpeg">test/files/diff/different.jpeg</a> (cat smile only was changed)
