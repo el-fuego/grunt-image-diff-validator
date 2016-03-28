@@ -44,8 +44,8 @@ module.exports = function (grunt) {
     var srcDestArray = grunt.file.expandMapping(this.data.src, this.data.dest, this.data);
     var srcOriginalArray = grunt.file.expandMapping(this.data.src, this.data.original, this.data);
 
-    var cwd = this.data.cwd;
-    grunt.file.mkdir(cwd + '/' + this.data.dest);
+    var cwd = this.data.cwd ? this.data.cwd.replace(/\/?$/, '/') : '';
+    grunt.file.mkdir(cwd + this.data.dest);
 
     function compareNextFile () {
       if (!srcDestArray.length) {
@@ -54,13 +54,13 @@ module.exports = function (grunt) {
       var srcDest = srcDestArray.shift();
 
       var currentFilePath = srcDest.src.toString();
-      var diffFilePath = cwd + '/' + srcDest.dest.toString();
+      var diffFilePath = cwd + srcDest.dest.toString();
 
       var srcOriginal = srcOriginalArray.find(function(srcOriginal) {
         return srcOriginal.src.toString() === currentFilePath;
       });
 
-      var originalFilePath = srcOriginal ? cwd + '/' + srcOriginal.dest.toString() : undefined;
+      var originalFilePath = srcOriginal ? cwd + srcOriginal.dest.toString() : undefined;
 
       if (!originalFilePath || !grunt.file.exists(originalFilePath)) {
         grunt.fail.warn('No original file for ' + currentFilePath);

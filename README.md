@@ -13,27 +13,27 @@ grunt.initConfig({
                 options: {
                     fuzzFactor: '1%'
                 },
-                expand: true,
                 flatten: true,
-                cwd: 'test/files',
-                src: 'current/*',
-                original: 'original',
-                dest: 'diff'
+                src: 'test/files/current/*',
+                original: 'test/files/original',
+                dest: 'test/files/diff'
           }
 };
 ```
 
-#### cwd
-Type: `String`
-Default value: ``
+#### flatten
+Type: `Boolean`
+Default value: false
 
-Prefix for all paths
+Set to true if you want to specify full paths for your files (like at an example)
 
 #### src
 Type: `Array`
 Default value: `[]`
 
 Array of files masks for compare with same files at original
+<br/>
+**note** cwd param is supported too. See <a href="https://github.com/el-fuego/grunt-image-diff-validator/blob/master/Gruntfile.js">Gruntfile.js</a>
 
 
 #### original
@@ -52,10 +52,9 @@ Where difference files need to be saved
 
 #### options.fuzzFactor
 Type: `String`
-Default value: `'1%'`
+Optional. Default value: `'1%'`
 
 What difference need to be ignored
-
 
 ___
 #### Recommendations

@@ -11,6 +11,10 @@ module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
+
+    jshint: {
+      all: ['Gruntfile.js', 'tasks/*.js', 'test/**/*.js']
+    },
     // Before generating any new files, remove any previously-created files.
     clean: {
       test: ['test/files/diff/*']
@@ -45,6 +49,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
   // By default, lint and run all tests.
-  grunt.registerTask('default', ['jshint:project', 'nodeunit']);
+  grunt.registerTask('default', ['jshint', 'nodeunit']);
 
 };
