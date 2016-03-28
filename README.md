@@ -33,6 +33,9 @@ Default value: `[]`
 
 Array of files masks for compare with same files at original
 <br/>
+
+**warn** folders selectors /**/ is not supported, flat files structure only<br/>
+
 **note** cwd param is supported too. See <a href="https://github.com/el-fuego/grunt-image-diff-validator/blob/master/Gruntfile.js">Gruntfile.js</a>
 
 
@@ -57,7 +60,7 @@ Optional. Default value: `'1%'`
 What difference need to be ignored
 
 ___
-#### Recommendations
+### Recommendations
 Use some like <a href="https://github.com/swissmanu/protractor-screenshot-reporter">protractor-screenshot-reporter</a> to generate screenshots at your e2e tests<br />
 <br />
 Use PNG instead of JPG for yours screenshots<br />
