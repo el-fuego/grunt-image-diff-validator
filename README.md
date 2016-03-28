@@ -1,6 +1,7 @@
 ## grunt-image-diff-validator
 
-#### Grunt plugin for check changes at your app screenshots. Reject task when screenshot was changed and create diff file
+Grunt plugin for check changes at your app screenshots. 
+Reject task when screenshot was changed and create diff file
 
 ___
 ### Usage Example
