@@ -1,0 +1,42 @@
+{
+  "name": "grunt-image-diff-validator",
+  "description": "Grunt plugin for check changes at your app screenshots. Reject task when screenshot was changed and create diff file",
+  "version": "0.1.0",
+  "homepage": "https://github.com/el-fuego/grunt-image-diff-validator.git",
+  "author": {
+    "name": "Yuriy Pulyaev",
+    "email": "watt87@mail.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/el-fuego/grunt-image-diff-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/el-fuego/grunt-image-diff-validator.git/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/el-fuego/grunt-image-diff-validator/blob/master/LICENSE.md"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~>0.4.2",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0"
+  },
+  "peerDependencies": {
+    "grunt": "~>0.4.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
