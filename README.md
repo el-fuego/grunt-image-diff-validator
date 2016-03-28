@@ -14,7 +14,7 @@ grunt.initConfig({
                     fuzzFactor: '1%'
                 },
                 flatten: true,
-                src: 'test/files/current/*',
+                src: 'test/files/current/*.png',
                 original: 'test/files/original',
                 dest: 'test/files/diff'
           }
@@ -28,7 +28,7 @@ Default value: false
 Set to true if you want to specify full paths for your files (like at an example)
 
 #### src
-Type: `Array`
+Type: `Array|String`
 Default value: `[]`
 
 Array of files masks for compare with same files at original
@@ -61,7 +61,7 @@ ___
 Use some like <a href="https://github.com/swissmanu/protractor-screenshot-reporter">protractor-screenshot-reporter</a> to generate screenshots at your e2e tests<br />
 <br />
 Use PNG instead of JPG for yours screenshots<br />
-JPG diff result example you can find at <a href="https://github.com/el-fuego/grunt-image-diff-validator/test/files/diff/different.jpeg">test/files/diff/different.jpeg</a> (cat smile only was changed)
+JPG diff result example you can find at <a href="https://github.com/el-fuego/grunt-image-diff-validator/blob/master/test/files/diff/different.jpeg">test/files/diff/different.jpeg</a> (cat smile only was changed)
 <br />
 For generation of all files with difference, run with --force parameter
 
